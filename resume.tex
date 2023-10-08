@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Mohamed Izhar
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Edited on: https://texviewer.herokuapp.com/
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohamed Izhar} \\ \vspace{1pt}
+    \small +91 9022395379 $|$ \href{mailto:melegend.forever@protonmail.com}{\underline{melegend.forever@protonmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mohamed-izhar-670128227}{\underline{linkedin.com/in/mohamed-izhar-670128227}} $|$
+    \href{https://github.com/zzedddd}{\underline{github.com/zzedddd}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Ajeenkya DY Patil University}{Pune, India}
+      {Bachelor of Technology in Mobile Application and Information Security}{2021 -- 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PHP Web Developer}{Oct. 2020 -- Dec. 2022}
+      {Shri Jagan Associates}{Remote}
+      \resumeItemListStart
+        \resumeItem{Collaborate within an Agile team structure where they will assist with developing code using such technologies as: PHP, HTML, CSS and JavaScript.}
+        \resumeItem{Developed front-end web application using HTML/CSS and JavaScript.}
+        \resumeItem{Worked with web debugging tools like Firefox or Chrome Developer Console}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % need to add more expericence here
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://poeticcode.xyz}{\textbf{Poeticcode.xyz}} $|$ \emph{Python, Django, Tailwindcss, PostgreSQL, Git}}{March 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a fully featured blog website using Django, Tailwind CSS, and HTMX to share coding insights and experiences.}
+            \resumeItem{Implemented GitHub and Google OAuth to authenticate users and allow them to comment on posts.}
+            \resumeItem{Enabled user registration, responsive UI with Tailwind CSS, dynamic content loading with HTMX, and interactive comment system.}
+            \resumeItem{Used Celery and Redis for asynchronous tasks}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://pingofdeath.tech}{\textbf{Pingofdeath.tech}} $|$ \emph{Python, Django, Django Rest Framework, PostgreSQL, Git}}{Dec. 2021 -- Feb. 2023}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a robust CRUD API for a blog using Django Rest Framework.}
+            \resumeItem{Implemented JWT authentication and authorization features to ensure data security.}
+            \resumeItem{Deployed the API on Vercel, optimizing for high availability and scalability.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Neoplayer} $|$ \emph{Dart, Flutter, Git}}{Oct. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a sleek and intuitive music player app using Flutter.}
+            \resumeItem{Implemented a Neumorphic user interface for a modern and visually appealing design.}
+            \resumeItem{Features include music playback controls, playlist management, and a user-friendly interface.}
+            \resumeItem{Deployed the app on the Google Play Store.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Rust, Kotlin, Dart, JavaScript, Python, Bash, SQL (Postgres), HTML/CSS} \\
+     \textbf{Frameworks}{: Django, Svelte, Flutter, ReactNative, React, Nextjs, Node.js, Tauri, Tailwindcss} \\
+     \textbf{Developer Tools}{: Linux, Git, Docker, Vercel, VS Code, Vim, Android Studio, QEMU/KVM} \\
+     \textbf{Libraries}{: GreenSock, Threejs, HTMX, Django Rest Framework, Framer Motion} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
